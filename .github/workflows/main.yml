@@ -7,8 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  #pull_request:
+  #  branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -62,11 +62,13 @@ jobs:
           # Incremental Scans?
           incremental: false
           # Additional CLI parameters
-          params: --branch=main
-                  --repo-name=${{ github.event.repository.name }}
-                  --merge-id=${{ github.event.number }}
-                  --namespace=${{ github.repository_owner }}
-                  #--cx-flow.filter-severity="Low"
+          #params: --branch=main
+          #        --repo-name=${{ github.event.repository.name }}
+          #        --merge-id=${{ github.event.number }}
+          #        --namespace=${{ github.repository_owner }}
+                  #--cx-flow.filter-severity="Low" 
+          params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --cx-flow.filterSeverity --cx-flow.filterCategory
+
           # GitHub API Token
           github_token: ${{secrets.GITHUB_TOKEN}}
           # Vulnerability Scanners (sast, sca, cxgo)

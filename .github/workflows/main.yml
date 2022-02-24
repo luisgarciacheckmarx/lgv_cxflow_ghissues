@@ -62,7 +62,7 @@ jobs:
           # Incremental Scans?
           incremental: false
           # Additional CLI parameters
-          params: --branch=develop
+          params: --branch=main
                   --repo-name=${{ github.event.repository.name }}
                   --merge-id=${{ github.event.number }}
                   --namespace=${{ github.repository_owner }}

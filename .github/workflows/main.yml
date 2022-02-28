@@ -78,6 +78,6 @@ jobs:
           sca_app_url: https://sca.scacheckmarx.com
           sca_access_control_url: https://platform.checkmarx.net
           sca_tenant: SCA-Champions
-          sca_username: ${{ secrets.CHECKMARX_SCA_USERNAME }}
-          sca_password: ${{ secrets.CHECKMARX_SCA_PASSWORD }}
+          sca_username: Luis.GarciaViejo@checkmarx.com
+          sca_password: Zq=oJG@!r&4a|1pcrE?Q
 

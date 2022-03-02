@@ -82,4 +82,9 @@ jobs:
           sca_tenant: ps-team-emea
           sca_username: Luis.GarciaViejo@checkmarx.com
           sca_password: CxPass123!
+          
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: cx.sarif
 

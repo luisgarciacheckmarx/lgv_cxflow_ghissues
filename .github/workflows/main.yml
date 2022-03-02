@@ -57,7 +57,7 @@ jobs:
           preset: 'Checkmarx Default'
           # Break build based on Checkmarx findings?
           break_build: false
-          # Bug tracker for the scan results.
+          # Bug tracker for the scan results (GiHub or GITHUBPULL)
           #bug_tracker: GitHub
           bug_tracker: GITHUBPULL
           # Incremental Scans?

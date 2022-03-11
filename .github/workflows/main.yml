@@ -40,7 +40,7 @@ jobs:
         uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.4
         with:
           # Provide Checkmarx URL
-          checkmarx_url: http://ff79-3-83-175-182.ngrok.io 
+          checkmarx_url: http://2239-3-83-175-182.ngrok.io 
           # Select a Checkmarx Team
           team: /CxServer
           # Provide Checkmarx Username
@@ -59,8 +59,8 @@ jobs:
           break_build: false
           # Bug tracker for the scan results.
           #bug_tracker: GitHub
-          #bug_tracker: GITHUBPULL
-          bug_tracker: Sarif
+          bug_tracker: GITHUBPULL
+          #bug_tracker: Sarif
           # Incremental Scans?
           incremental: false
           # Additional CLI parameters
@@ -83,8 +83,8 @@ jobs:
           sca_username: Luis.GarciaViejo@checkmarx.com
           sca_password: CxPass123!
           
-      - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: cx.sarif
+      #- name: Upload SARIF file
+      #  uses: github/codeql-action/upload-sarif@v1
+      #  with:
+      #    sarif_file: cx.sarif
 

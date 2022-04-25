@@ -71,7 +71,7 @@ jobs:
           #        --cx-flow.filter-severity
           #params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --cx-flow.filterSeverity=Medium,Low --cx-flow.filterCategory
           #params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=kk --merge-id=kk --cx-flow.filterSeverity --cx-flow.filterCategory
-          params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --merge-id=${{ github.event.number }} --cx-flow.filterSeverity --cx-flow.filterCategory
+          params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --merge-id=${{ github.event.number }} --cx-flow.filterSeverity --cx-flow.filterCategory --cx-flow.thresholds.high=0
 
           # GitHub API Token
           github_token: ${{secrets.GITHUB_TOKEN}}
